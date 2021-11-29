@@ -675,6 +675,10 @@
     background-repeat: no-repeat;
 }
 
+.bg18 {
+    background-color: #FFCC01;
+}
+
 .pie-chart {
     width: 15rem;
     height: 15rem;
@@ -704,6 +708,10 @@
 .my-lg-0 {
     margin-top: 0!important;
     margin-bottom: 0!important
+}
+
+.border-0 {
+    border: 0!important
 }
 
 .faq-section {
