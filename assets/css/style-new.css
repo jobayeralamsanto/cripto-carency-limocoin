@@ -310,6 +310,11 @@
     table {
         font-size: 10px!important;
     }
+    #chart_wrap {
+        padding-bottom: 90%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -714,6 +719,30 @@
     border: 0!important
 }
 
+.color4 {
+    color: #FFB200;
+}
+
+.color5 {
+    color: #FFCC01;
+}
+
+.color6 {
+    color: #CF1319;
+}
+
+.color7 {
+    color: #00FF08;
+}
+
+.color8 {
+    color: #E50179;
+}
+
+.chart-item {
+    display: none;
+}
+
 .faq-section {
     background: linear-gradient(90deg, rgba(0, 153, 213, 1) 25%, rgba(38, 65, 139, 1) 95%);
 }
@@ -821,96 +850,57 @@
     margin-bottom: 14px;
 }
 
-
-/* 
-.pie-container {
+#chart_wrap {
     position: relative;
-    float: left;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+    padding-bottom: 80%;
+    height: auto;
+    overflow: hidden;
 }
 
-.pie-container:after {
-    content: '';
+#piechart_3d {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    z-index: 50;
-    width: 50%;
-    height: 50%;
-    color: white;
-    background-color: #f5f5f5;
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8) inset;
-}
-
-.pie {
-    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #AAA;
-    clip: rect(0px, 190px, 153px, 0px);
-    border-radius: 50%;
 }
 
-#safari {
-    z-index: 10;
-    background-color: #AAA;
-    transform: rotate(-20deg);
+@media (max-width: 1199px) {
+    #chart_wrap {
+        padding-bottom: 90%!important;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-#ie {
-    z-index: 20;
-    background-color: #0074D9;
-    transform: rotate(160deg);
+@media (max-width: 991px) {
+    #chart_wrap {
+        padding-bottom: 63%!important;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-#firefox {
-    z-index: 30;
-    background-color: #FF851B;
-    transform: rotate(20deg);
+@media (max-width: 767px) {
+    #chart_wrap {
+        padding-bottom: 83%!important;
+    }
 }
 
-#chrome {
-    z-index: 40;
-    background-color: #2ECC40;
-    transform: rotate(100deg);
+@media (max-width: 520px) {
+    #chart_wrap {
+        padding-bottom: 100%!important;
+    }
 }
 
-.stats {
-    float: left;
-    margin-left: 50px;
+@media (max-width: 430px) {
+    #chart_wrap {
+        padding-bottom: 125%!important;
+    }
 }
 
-.stats ul {
-    list-style: none;
+@media (max-width: 388px) {
+    .chart-item {
+        display: block;
+    }
 }
-
-.stats li {
-    position: relative;
-    margin: 10px 0;
-}
-
-.stats li:before {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: -25px;
-    top: 2px;
-    background-color: #AAA;
-}
-
-.stats li[data-name='Chrome']:before {
-    background-color: #2ECC40;
-}
-
-.stats li[data-name='Firefox']:before {
-    background-color: #FF851B;
-}
-
-.stats li[data-name='Internet Explorer']:before {
-    background-color: #0074D9;
-} */
